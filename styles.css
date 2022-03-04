@@ -1,0 +1,652 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.section-heading {
+  font-size: 12rem;
+  font-weight: 900;
+  color: whitesmoke;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+  text-shadow: 0.3rem 0.3rem 0.3rem #000;
+  margin-bottom: 2rem;
+}
+
+/*Navbar*/
+.navbar {
+  width: 100%;
+  height: 14rem;
+  background-color: #000;
+  position: fixed;
+  top: -14rem;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem black;
+          box-shadow: 0.2rem 0.2rem 0.2rem black;
+  -webkit-transition: top 0.4s;
+  transition: top 0.4s;
+}
+
+.navbar.change {
+  top: 0;
+  -webkit-transition: top 0.4s 0.2s;
+  transition: top 0.4s 0.2s;
+}
+
+.navbar-link {
+  color: lightgrey;
+  margin: 0 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: color 0.3s, opacity 0.2s;
+  transition: color 0.3s, opacity 0.2s;
+}
+
+.navbar-link i {
+  font-size: 7rem;
+}
+
+.navbar-link span {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.navbar-link:hover {
+  color: wheat;
+}
+
+.navbar-link.change {
+  opacity: 1;
+}
+
+.navbar-link.change:nth-child(1) {
+  -webkit-transition: opacity 0.4s 0.5s, color 0.3s;
+  transition: opacity 0.4s 0.5s, color 0.3s;
+}
+
+.navbar-link.change:nth-child(2) {
+  -webkit-transition: opacity 0.4s 0.6s, color 0.3s;
+  transition: opacity 0.4s 0.6s, color 0.3s;
+}
+
+.navbar-link.change:nth-child(3) {
+  -webkit-transition: opacity 0.4s 0.7s, color 0.3s;
+  transition: opacity 0.4s 0.7s, color 0.3s;
+}
+
+.navbar-link.change:nth-child(4) {
+  -webkit-transition: opacity 0.4s 0.8s, color 0.3s;
+  transition: opacity 0.4s 0.8s, color 0.3s;
+}
+
+.navbar-link.change:nth-child(5) {
+  -webkit-transition: opacity 0.4s 0.9s, color 0.3s;
+  transition: opacity 0.4s 0.9s, color 0.3s;
+}
+
+.menu {
+  width: 4rem;
+  height: 6rem;
+  background-color: #000;
+  position: fixed;
+  top: 1rem;
+  left: 5rem;
+  cursor: pointer;
+  z-index: 100;
+  border-radius: 30rem 30rem 15rem 15rem;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem black, -0.1rem -0.1rem black;
+          box-shadow: 0.1rem 0.1rem 0.1rem black, -0.1rem -0.1rem black;
+  -webkit-transition: top 0.4s 0.2s;
+  transition: top 0.4s 0.2s;
+}
+
+.menu:before {
+  content: "";
+  width: 0.3rem;
+  height: 15rem;
+  background-color: black;
+  position: absolute;
+  top: -15rem;
+  left: 1.8rem;
+  -webkit-box-shadow: 0.1rem 0 0.1rem black;
+          box-shadow: 0.1rem 0 0.1rem black;
+}
+
+.menu.change {
+  top: 15rem;
+  -webkit-transition: top 0.4s 0.2s;
+  transition: top 0.4s 0.2s;
+}
+
+/*End of Navbar*/
+/*Section 1*/
+.section-1 {
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+  background: -webkit-gradient(linear, left top, right top, from(#434343), to(#000000));
+  background: linear-gradient(to right, #434343, #000000);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section-1-icons i {
+  font-size: 30rem;
+  padding-bottom: 10rem;
+  color: burlywood;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  text-shadow: 0.2rem 0.2rem 0.2rem #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.section-1-icons i.salut {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*End of Section 1*/
+/*Section 2 */
+.section-2 {
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+  background: -webkit-gradient(linear, left top, right top, from(#434343), to(#000000));
+  background: linear-gradient(to right, #434343, #000000);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10rem 0;
+}
+
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-color: #795c0d;
+  padding: 7rem;
+  border-width: 3rem;
+  border-style: solid;
+}
+
+.card {
+  width: 30rem;
+  background-color: #be9116;
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 1rem 1rem 1rem #000;
+          box-shadow: 1rem 1rem 1rem #000;
+  position: relative;
+  -webkit-transform: rotateY(20deg) skewX(-2deg);
+          transform: rotateY(20deg) skewX(-2deg);
+  -webkit-transition: -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
+  transition: -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s, -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.card:hover {
+  -webkit-transform: rotateY(20deg) skewX(-2deg) translateY(-3rem);
+          transform: rotateY(20deg) skewX(-2deg) translateY(-3rem);
+  -webkit-box-shadow: 2rem 2rem 2rem #000;
+          box-shadow: 2rem 2rem 2rem #000;
+}
+
+.card::before {
+  content: "";
+  height: 100%;
+  width: 1rem;
+  background-color: #795c0d;
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  -webkit-transform: skewY(45deg);
+          transform: skewY(45deg);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-box-shadow: -0.1rem -0.1rem -0.1rem #000;
+          box-shadow: -0.1rem -0.1rem -0.1rem #000;
+}
+
+.card::after {
+  content: "";
+  height: 1rem;
+  width: 100%;
+  background-color: #7e672a;
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-box-shadow: -0.1rem -0.1rem -0.1rem #000;
+          box-shadow: -0.1rem -0.1rem -0.1rem #000;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-name {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin: 2rem 0;
+  color: #111;
+  text-shadow: 0.15rem 0.15rem 0.15rem #000;
+}
+
+.card-btn {
+  width: 70%;
+  background-color: #111;
+  color: #888;
+  border-radius: 5rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  -webkit-box-shadow: -0.2rem -0.2rem -0.2rem #000;
+          box-shadow: -0.2rem -0.2rem -0.2rem #000;
+  border: none;
+}
+
+/*End of Section 2 */
+/*Section 3 */
+.section-3 {
+  background: #000000;
+  background: -webkit-gradient(linear, left top, right top, from(#434343), to(#000000));
+  background: linear-gradient(to right, #434343, #000000);
+  padding: 5rem 0;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 10rem;
+}
+
+.gallery-link {
+  position: relative;
+  margin: 4rem 1rem;
+}
+
+.gallery-link::before {
+  content: "";
+  position: absolute;
+  top: 2vw;
+  left: 80%;
+  width: 0.2rem;
+  height: 0;
+  background-color: #fff;
+  z-index: 10;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.gallery-link::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 2rem;
+  width: 0;
+  height: 0.2rem;
+  background-color: #fff;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.gallery-link:hover::before {
+  height: 80%;
+}
+
+.gallery-link:hover::after {
+  width: 90%;
+}
+
+.food-img {
+  width: 24vw;
+  height: 15vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.1rem goldenrod, 0.5rem 0.5rem 0.1rem gold, 0.7rem 0.7rem 0.1rem hotpink, 0.9rem 0.9rem 0.1rem pink;
+          box-shadow: 0.3rem 0.3rem 0.1rem goldenrod, 0.5rem 0.5rem 0.1rem gold, 0.7rem 0.7rem 0.1rem hotpink, 0.9rem 0.9rem 0.1rem pink;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.gallery-link:hover .food-img {
+  -webkit-box-shadow: 1rem 1rem 0.1rem goldenrod, 2rem 2rem 0.1rem gold, 3rem 3rem 0.1rem hotpink, 4rem 4rem 0.1rem pink;
+          box-shadow: 1rem 1rem 0.1rem goldenrod, 2rem 2rem 0.1rem gold, 3rem 3rem 0.1rem hotpink, 4rem 4rem 0.1rem pink;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: blur(0.5rem);
+          filter: blur(0.5rem);
+  opacity: 0.5;
+}
+
+.food-name {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.gallery-link:hover .food-name {
+  width: 100%;
+  -webkit-transition: width 2s 0.5s;
+  transition: width 2s 0.5s;
+}
+
+.food-description {
+  position: absolute;
+  bottom: 3vw;
+  left: 2rem;
+  width: 70%;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.gallery-link:hover .food-description {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 1s 1s;
+  transition: opacity 1s 1s;
+}
+
+/*End of Section 3 */
+/*Section 4 */
+.section-4 {
+  width: 100%;
+  height: 30vh;
+  background: #000000;
+  background: -webkit-gradient(linear, left top, right top, from(#434343), to(#2e2c2c));
+  background: linear-gradient(to right, #434343, #2e2c2c);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 3rem 0;
+  position: relative;
+}
+
+.section-4-text {
+  text-transform: uppercase;
+}
+
+.section-4-heading {
+  font-size: 4rem;
+  font-weight: 900;
+  color: goldenrod;
+}
+
+.section-4-paragraph {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #adaaaa;
+}
+
+.signup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signup-form-input {
+  width: 35rem;
+  height: 5rem;
+  padding: 1rem;
+  border: 0.2rem solid burlywood;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #000;
+}
+
+.signup-form-input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.signup-form-input:-ms-input-placeholder {
+  color: #000000;
+}
+
+.signup-form-input::-ms-input-placeholder {
+  color: #000000;
+}
+
+.signup-form-input::placeholder {
+  color: #000000;
+}
+
+.signup-form-btn {
+  position: relative;
+  left: -4.5rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: #111;
+  color: #795c0d;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 3rem;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  font-weight: 200;
+  background: #833ab4;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#fcb045), color-stop(#fd1d1d), to(#833ab4));
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-top: 0.1rem solid whitesmoke;
+  padding-top: 6rem;
+  width: 100%;
+  text-align: center;
+}
+
+/*End of Section 4 */
+/*Responsive */
+@media (max-width: 1400px) {
+  html {
+    font-size: 50%;
+  }
+  .section-2 {
+    height: auto;
+    padding: 10rem 0 12rem 0;
+  }
+  .cards-container {
+    margin-top: 10rem;
+  }
+  .gallery-link {
+    width: 40rem;
+    height: 25rem;
+    margin: 5rem;
+  }
+  .food-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-heading {
+    font-size: 9rem;
+    margin: 0 5rem;
+  }
+  .section-1-icons {
+    font-size: 25rem;
+  }
+  .cards-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card {
+    margin: 5rem;
+  }
+  .section-4 {
+    height: 30rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar-link {
+    margin: 2rem;
+  }
+  .navbar-link i {
+    font-size: 4rem;
+  }
+  .navbar-link span {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .section-heading {
+    font-size: 7rem;
+    margin: 0 10rem;
+  }
+  .section-1-icons {
+    font-size: 20rem;
+  }
+  .menu {
+    left: 2rem;
+  }
+  .section-4 {
+    height: 40rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-4-text {
+    margin-bottom: 8rem;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 40%;
+  }
+  .navbar-link {
+    margin: 0 0.7rem;
+  }
+}
+
+/*End of Responsive */
+/*# sourceMappingURL=styles.css.map */
